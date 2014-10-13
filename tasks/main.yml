@@ -1,0 +1,7 @@
+---
+# tasks file for epel
+- name: create EPEL yum repository
+  template: src=epel.repo.j2 dest=/etc/yum.repos.d/epel.repo
+
+- name: import EPEL GPG key
+  rpm_key: key={{epel_url}}/{{epel_key}} state=present
