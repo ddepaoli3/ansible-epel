@@ -11,7 +11,8 @@ No external dependencies.
 Role Variables
 --------------
 
-None.
+- **yum_repos_d**: Location of *yum* repository directory where
+  repositories are defined.  Defaults to `/etc/yum.repos.d`.
 
 Dependencies
 ------------
